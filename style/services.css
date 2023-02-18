@@ -1,0 +1,52 @@
+.sevicess{
+    border: 2.5px solid rgb(219, 219, 219);
+    margin: 1rem 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.sevicess div i{
+    font-size: 3rem;
+    color: #DA072C;
+}
+.aboutUsBread + .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whatWeDo{
+    background-color: rgb(244, 244, 244);
+}
+.whatWeDo .container .lines{
+    padding-top: 4rem;
+}
+.whatWeDo .container h2{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.whatWeDo .container .row{
+    margin-top: 1.5rem;
+}
+.card-total{
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+.card-total img{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+.card-total .card-title h5{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.card-total .card-body p{
+    font-size: .9rem;
+    font-weight: 100;
+}

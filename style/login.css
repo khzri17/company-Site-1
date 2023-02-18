@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'iranSans';
+    src: url(../fonts/IRANSansX-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/YekanBakh-Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'aria';
+    src: url('../fonts/Aria-Normal.ttf') format('truetype');
+}
+*{
+    font-family: 'iranSans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    position: relative;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background: #bb1133;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 40s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 56%;
+    width: 254px;
+    height: 254px;
+    bottom: -254px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 25%;
+    width: 73px;
+    height: 73px;
+    bottom: -73px;
+    animation-delay: 4s;
+}
+.background li:nth-child(2) {
+    left: 65%;
+    width: 13px;
+    height: 13px;
+    bottom: -13px;
+    animation-delay: 5s;
+}
+.background li:nth-child(3) {
+    left: 63%;
+    width: 138px;
+    height: 138px;
+    bottom: -138px;
+    animation-delay: 3s;
+}
+.background li:nth-child(4) {
+    left: 1%;
+    width: 32px;
+    height: 32px;
+    bottom: -32px;
+    animation-delay: 5s;
+}
+.background li:nth-child(5) {
+    left: 3%;
+    width: 111px;
+    height: 111px;
+    bottom: -111px;
+    animation-delay: 17s;
+}
+.background li:nth-child(6) {
+    left: 32%;
+    width: 246px;
+    height: 246px;
+    bottom: -246px;
+    animation-delay: 8s;
+}
+.background li:nth-child(7) {
+    left: 41%;
+    width: 85px;
+    height: 85px;
+    bottom: -85px;
+    animation-delay: 19s;
+}
+.background li:nth-child(8) {
+    left: 14%;
+    width: 258px;
+    height: 258px;
+    bottom: -258px;
+    animation-delay: 3s;
+}
+.background li:nth-child(9) {
+    left: 84%;
+    width: 109px;
+    height: 109px;
+    bottom: -109px;
+    animation-delay: 27s;
+}
+.login{
+    width: 350px;
+    height: 500px;
+    z-index: 10;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.934);
+    position: absolute;
+}
+.login.active{
+    display: flex;
+}
+.login.deactive{
+    display: none;
+}
+.login .login-icon{
+    font-size: 4rem;
+    margin-top: 1rem;
+    color: rgb(52, 52, 52);
+}
+.login h5 , .signUp h5{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 1rem 0 2rem 0;
+    color: rgb(89, 89, 89);
+}
+.login input:focus , .signUp input:focus{
+    outline: rgb(187, 187, 187);
+}
+
+.pass , .userName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: 15px;
+    right: 56px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.502);
+    transition: all .2s linear;
+}
+input:focus + span{
+    color: rgb(71, 71, 71);
+}
+.login input , .signUp input{
+    width: 70%;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+    padding: 5px 25px 5px 10px;
+    margin: 10px 0;
+    background-color: transparent;
+    font-size: .9rem;
+    color: rgb(90, 90, 90);
+}
+
+.login input::placeholder , .signUp input::placeholder{
+    color: rgb(195, 195, 195);
+    user-select: none;
+}
+.login p , .signUp p{
+    font-size: .8rem;
+    color: #8f8f8f;
+}
+.login p:nth-child(5) , .signUp p:nth-child(5){
+    margin-top: 1.5rem;
+}
+.signUp{
+    width: 350px;
+    height: 500px;
+    z-index: 10;
+    border-radius: 15px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.934);
+    position: absolute;
+}
+.signUp.active{
+    display: flex;
+}
+.signUp.deactive{
+    display: none;
+}
+.signUp h5{
+    margin: 5rem 0 3rem;
+    font-weight: bold;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.checkbox input{
+    width: 10%;
+    margin: 0;
+    padding: 0;
+}
